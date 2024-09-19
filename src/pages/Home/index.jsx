@@ -1,21 +1,11 @@
-import { CaretRight } from '@phosphor-icons/react'
-import logo from '../../../public/purplesky_logo.svg'
+import { Sidebar } from './Sidebar'
+
 export function Home() {
 	return (
-		<div className='flex h-screen flex-col items-center justify-center gap-2'>
-			<img
-				src={logo}
-				alt='Purple Sky Logo'
-				className='size-8 animate-pulse'
-			/>
-			<h1 className='text-xl font-semibold'>PurpleSky</h1>
-			<p className='text-md text-slate-500'>
-				Discover a hole new world of colors
-			</p>
-			<button className='bg-violet-600 rounded-full px-4 py-2 font-semibold hover:bg-violet-700 mt-4 flex items-center gap-1'>
-				Get Started
-				<CaretRight weight='bold' size={20} />
-			</button>
+		<div className='max-w-7xl mx-auto grid grid-cols-[230px_1fr_230px] px-6  h-screen'>
+			<Sidebar />
+			<main className='p-4 border-x border-slate-800'>Content</main>
+			<aside className='p-4'>Discover</aside>
 		</div>
 	)
 }

@@ -1,5 +1,5 @@
-import { Navbar } from './Navbar'
-import { Sidebar } from './Sidebar'
+import { Navbar } from '../../components/ui/Navbar'
+import { Sidebar } from '../../components/ui/Sidebar'
 
 export function Home() {
 	return (

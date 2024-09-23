@@ -9,9 +9,9 @@ import {
 	NotePencil,
 	UserCircle,
 } from '@phosphor-icons/react'
-import { Button } from '../../components/ui/Button'
-import { UserProfileImg } from '../../components/ui/UserProfileImg'
-import { Navigation } from '../../components/ui/Navigation'
+import { Button } from './Button'
+import { UserProfileImg } from './UserProfileImg'
+import { Navigation } from './Navigation'
 
 export function Navbar() {
 	return (

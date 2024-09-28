@@ -12,8 +12,12 @@ import {
 import { Button } from './Button'
 import { UserProfileImg } from './UserProfileImg'
 import { Navigation } from './Navigation'
+import { TweetModal } from './TweetModal'
+import { useState } from 'react'
 
 export function Navbar() {
+	const [modalOpen, setModalOpen] = useState(false)
+
 	return (
 		<aside className='px-4 py-6 flex flex-col gap-4'>
 			<div className='ml-4'>
@@ -56,12 +60,12 @@ export function Navbar() {
 			</Navigation.Root>
 
 			<Button
-				handleClick={() => {
-					alert('Add New Post')
-				}}
+				handleClick={() => setModalOpen(!modalOpen)}
 				Icon={NotePencil}
 				label={'New Post'}
 			/>
+
+			{modalOpen && <TweetModal setModalOpen={setModalOpen} />}
 		</aside>
 	)
 }

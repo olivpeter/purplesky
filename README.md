@@ -16,12 +16,12 @@ Purple Sky is a study project that aims to create a simple BlueSky clone made wi
 -   [x] Learn and use React Hooks
 -   [x] Create modals with useState
 -   [x] Use composition patterns
--   [] Add routing with React Router
-    -   [] Add user profile page
-    -   [] Add login and registration page
--   [] Add like, comments and retweets features
--   [] Add the ability to follow and unfollow users
--   [] Add the ability to tweet
+-   [ ] Add routing with React Router
+    -   [ ] Add user profile page
+    -   [ ] Add login and registration page
+-   [ ] Add like, comments and retweets features
+-   [ ] Add the ability to follow and unfollow users
+-   [ ] Add the ability to tweet
 
 ## Installation
 
